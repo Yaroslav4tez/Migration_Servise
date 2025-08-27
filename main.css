@@ -250,41 +250,94 @@ img {
 
 
 @media (max-width: 600px) {
-  #container_text p {
-    padding-left: 15px;
-    padding-right: 15px;
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
   }
 
-  .list-of-services {
-    flex-direction: column;  
-    padding-left: 15px;
+  header img {
+    height: 80px; /* менший логотип */
   }
 
-  .list-of-services li {
-    padding-right: 0;
-    padding-bottom: 10px;
+  .second-header-img img {
+    padding-left: 0;
+    height: 80px;
   }
 
+  .hd_text {
+    top: -10px; 
+    font-size: 20px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  /* меню */
   nav {
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 20px;
   }
 
+  .a-outline {
+    font-size: 14px;
+    padding: 6px 8px;
+    width: 90%; /* кнопки на всю ширину */
+    text-align: center;
+  }
+
+  main {
+    padding: 10px;
+    background-size: cover; /* карта не ріже фон */
+  }
+
+  main h1, main h2 {
+    width: auto;
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  /* блок послуг */
+  .services-grid {
+    grid-template-columns: 1fr; /* одна колонка */
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .service-card {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  /* футер */
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #tel-mail {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  address {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* зображення */
   img {
-    height: auto;
     max-width: 100%;
-    margin-top: 10px;
+    height: auto;
+    margin: 10px 0;
   }
-
-  #container_text p {
-  display: block; 
-}
-
-#container_text p img {
-  display: block;
-  margin: 10px auto 0; 
-  max-width: 100%;
-  height: auto;
-}
-
 }
